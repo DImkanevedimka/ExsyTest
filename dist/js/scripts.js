@@ -47,7 +47,7 @@ $(document).ready(function(){
   form.on('submit', function(event){
     console.log(this[0].value)
     form.html('<div class="message"><p>Благодарим ' + this[0].value + '.</p>'+
-    '<p> Мы перезвоним вам в кротчайшие сроки</p></div><div class="buttonClose">&#10006;</div>');
+    '<p> Мы перезвоним вам в кратчайшие сроки</p></div><div class="buttonClose">&#10006;</div>');
   });
   
   
