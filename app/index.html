@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper position-absolute header-flex">
+            <div class="logo">
+                <a href="#" class="logo-link">
+                    Богдановский
+                    <span class="logo-link-name">Карьер</span>
+                </a>
+            </div>
+            <a href="#" id="toggle" class="toggle-active"><span></span></a>
+                <div class="togglemenu">
+                    <ul class="header-menu">
+                        <li class="header-menu__item-border"><a href="#01">Производство</a></li>
+                        <li class="divinder"></li>
+                        <li class="header-menu__item-border"><a href="#02">Адрес Карьера</a></li>
+                    </ul>
+                    <div class="phone-button">
+                        <a href="#">Заказать звонок</a>
+                    </div>
+                </div>
+        </div>
+        <div class="popup passive">
+            <form action="#" id='callbackform'>
+                <input type="text" id="name" placeholder="Ваше Имя" required>
+                <input type="text" id="number" placeholder="Ваш номер телефона" required pattern="+\d{1,15}">
+                <input type="text" id="info" placeholder="Дополнительная информация">
+                <input type="submit" value="Позвонить мне">
+                <div class="buttonClose">&#10006;</div>
+            </form>
+        </div>
+        <div class="slider">
+            <div class="slider-firstslide"></div>
+            <div class="slider-secondslide"></div>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper main-flex" id='01'>
+            <div class="main-right">
+                <div class="title">
+                    <h6 class="title-line">Производим и продаем щебень</h6>
+                </div>
+                <div class="main-right__text">
+                    <p>Площадь участка 96,1 га. Щебень и гравий из плотных пород для строительных работ. 
+                        Прочность соответ&shy;ствует марке 800 (ДР-12). Запасы по гравию 28 %. Пески 
+                        и пески-отсевы Богдановского-2 участка могут быть ис&shy;пользованы в 
+                        качествестроительного и дорожного материала. Мощность толщи 12-22,1 метра. 
+                        Уровень грун&shy;товых вод расположен ниже подошвы полезной толщи. Концентрация 
+                        радионуклидов соответствует 1 классу СП 2.6.1.758-99.
+                    </p>
+                    <p class="maint-right__text--padding_top"><span class="bold">Щебень 20×40</span>  пригоден в производстве бетона и изготовлении конструкций 
+                        из него, для дорожного строи&shy;тельства при закладке фундамента зданий, при 
+                        возведении производственных всех видов сооружений и др.
+                    </p>
+                </div>
+            </div>
+            <div class="main-left">
+                <h6>Контакты</h6>
+                <ul>
+                    <li class="bold">Звоните:</li>  
+                    <li>8 (800) <span class="bold">555-93-99</span></li>
+                    <li>8 (495) <span class="bold">638-55-85</span></li>
+                </ul>
+                
+            </div>
+        </div>
+        <div class="map" id='02'>
+            <div class="wrapper wrapper-padding_left">
+                <div class="title">
+                    <h6 class="title-line">Адрес Карьера</h6>
+                </div>
+                <div class="address">
+                    <img src="img/place-icon.png" alt="placeicon">
+                    поселок Ханино, Суворовский район, Тульская область, Россия
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
+    </main>
+    <footer>
+        © 2015, Copyright  
+    </footer>
+    <script src='js/libs.min.js'></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+    <script src="js/map.js"></script>
+    <script src='js/scripts.js'></script>
+</body>
+</html>
