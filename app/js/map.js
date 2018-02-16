@@ -19,7 +19,7 @@ $(document).ready(function(){
 			position: new google.maps.LatLng(54.210764, 36.615503),
 			map: map,
 			title: 'Хатино',
-			icon: '/img/icon.png'
+			icon: './img/icon.png'
 		});
 	};
 });
